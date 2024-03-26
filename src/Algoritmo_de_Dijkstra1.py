@@ -39,7 +39,7 @@ def impirimir_caminho(pais:dict):
         path.append(pai)
     print(path[::-1])
 
-def algoritmo_de_Djikkstra(grafo:dict,custos,pais):
+def algoritmo_de_Djikstra(grafo:dict,custos,pais):
     vertice = ache_custo_mais_baixo(custos)
     while vertice is not None:
         custo_vertice =  custos[vertice]
@@ -52,4 +52,4 @@ def algoritmo_de_Djikkstra(grafo:dict,custos,pais):
         processados.append(vertice)
         vertice = ache_custo_mais_baixo(custos)
     impirimir_caminho(pais)
-algoritmo_de_Djikkstra(grafo, custos, pais)
+algoritmo_de_Djikstra(grafo, custos, pais)
